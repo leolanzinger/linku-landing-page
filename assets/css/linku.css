@@ -1,0 +1,136 @@
+/*
+ * LinkU css theme file:
+ * overrides some styles from assets/css/main.css
+ * Author: Leonardo Lanzinger
+ */
+
+ body {
+ 	background-color: #fff;
+ 	color: #555;
+ 	font-weight: 500;
+ 	font-family: 'Raleway', sans-serif;
+ }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #333;
+}
+
+p {
+	font-weight: 500;
+	font-family: 'Raleway', sans-serif;
+}
+
+h4.bigger-line {
+	line-height: 32px;
+}
+
+.h4-logo {
+	display: inline-text;
+	vertical-align: bottom;
+	height: 32px;
+}
+
+h3.under-logo {
+	font-weight: 500;
+}
+
+hr {
+	border-top: 1px solid #eee;
+}
+
+div.form-group {
+	display: inline-block;
+}
+
+.navbar-default {
+	background-color: #00BCD4;
+}
+
+#top-left-logo {
+	width: 60px;
+}
+
+#logo-big-header {
+	width: 200px;
+}
+
+.credits-logo {
+	display: inline-block;
+	height: 24px;
+}
+
+#headerwrap {
+	background-image: url('../img/background-top.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-color: #00BCD4;
+	padding-top: 140px;
+}
+
+@media (max-width: 768px) {
+	#headerwrap {
+		background-image: url('../img/background-top-small.png');
+	}
+}
+
+#headerwrap h1 {
+	margin-top: 20px;
+}
+
+#event-screen-top {
+	width: 340px;
+}
+
+.blue {
+	background-color: #536DFE;
+	border-color: #536DFE;
+}
+
+.blue:hover {
+	background-color: #3D5AFE;	
+	border-color: #3D5AFE;
+}
+
+.logo-h1 {
+	width: 160px;
+	margin-top: 20px;
+}
+
+.padded {
+	padding: 40px 0;
+}
+
+.less-padded {
+	padding: 20px 0;
+}
+
+.padding-bottom {
+	padding-bottom: 40px;
+}
+
+.header-background-md {
+	position: absolute;
+	z-index: 0;
+	top: 120px;
+	right: 25%;
+	width: 240px;
+}
+
+.header-background-md img {
+	width: 240px;
+}
+
+.header-background-sm {
+	position: absolute;
+	z-index: 0;
+	top: 120px;
+	right: 8%;
+	width: 240px;
+}
+
+.header-background-sm img {
+	width: 240px;
+}

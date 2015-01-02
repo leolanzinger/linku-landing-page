@@ -199,6 +199,12 @@ h3.tagline {
 	width: 400px;
 }
 
+@media (max-width: 768px) {
+	#header-row .logo-hedge {
+		width: 280px;
+	}
+}
+
 #header-row .screenshot-big {
 	width: 340px;
 }
@@ -252,7 +258,7 @@ h3.tagline {
 
 @media (max-width: 768px) {
 	#fourth-row .screenshot {
-		margin-left: -180px;
+		margin-left: -240px;
 	}
 }
 
@@ -265,6 +271,7 @@ h3.tagline {
     url('../img/business-background.jpg');
  	background-size: cover;
  	height: 100vh;
+ 	min-height: 750px;
 }
 
 #sixth-row .h3-logo {

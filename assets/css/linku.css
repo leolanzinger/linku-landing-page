@@ -56,9 +56,10 @@ div.form-group {
 	width: 200px;
 }
 
-.credits-logo {
+.p-logo {
 	display: inline-block;
 	height: 24px;
+	vertical-align: top;
 }
 
 #headerwrap {
@@ -70,8 +71,15 @@ div.form-group {
 	padding-top: 140px;
 }
 
+.background-categories {
+	background-image: url('../img/background-top.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+
 @media (max-width: 768px) {
-	#headerwrap {
+	#headerwrap, .background-categories {
 		background-image: url('../img/background-top-small.png');
 	}
 }
@@ -111,6 +119,14 @@ div.form-group {
 	padding-bottom: 40px;
 }
 
+.padding-bottom-more {
+	padding-bottom: 80px;
+}
+
+.padding-top {
+	padding-top: 40px;
+}
+
 .header-background-md {
 	position: absolute;
 	z-index: 0;
@@ -133,4 +149,49 @@ div.form-group {
 
 .header-background-sm img {
 	width: 240px;
+}
+
+.cyan {
+	background-color: #00BCD4;
+}
+
+.cyan-row {
+	color: white;
+}
+
+.cyan-row h3, .cyan-row h1, .cyan-row h2, .cyan-row h4 {
+	color: white;
+}
+
+@media (max-width: 768px) {
+	.video-centered {
+		width: 460px;
+		height: 280px;
+	}
+}
+
+/*
+.big-row {
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+*/
+.no-bottom {
+	margin-bottom: 15px;
+}
+
+.no-top {
+	margin-top: 0;
 }

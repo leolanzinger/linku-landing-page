@@ -207,11 +207,13 @@ function setDarkPrimary(dark) {
 		$('.coloured-row').removeClass('light-text');
 		$('.coloured-row').addClass('dark-text');
 		$('.logo-color-change').attr("src","assets/img/svg/linku-logo-black.svg");
+		$('.business-color-change').attr("src","assets/img/business-black.png");
 	}
 	else {
 		$('.coloured-row').removeClass('dark-text');
 		$('.coloured-row').addClass('light-text');
 		$('.logo-color-change').attr("src","assets/img/svg/linku-logo-white.svg");
+		$('.business-color-change').attr("src","assets/img/business-white.png");
 	}
 }
 

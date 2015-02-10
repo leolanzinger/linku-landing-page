@@ -1,15 +1,19 @@
 /*
- * LinkU css theme file:
- * overrides some styles from assets/css/main.css
- * Author: Leonardo Lanzinger
+ *	LinkU css theme file:
+ *	overrides some styles from assets/css/main.css
+ *	Author: Leonardo Lanzinger
+ *	Colors:
+ *	cyan: #00BCD4;
+ *	deep purple: #673AB7;
+ *	teal: #009688;
  */
 
- body {
- 	background-color: #fff;
- 	color: #555;
- 	font-weight: 500;
- 	font-family: 'Raleway', sans-serif;
- }
+body {
+	background-color: #fff;
+	color: #555;
+	font-weight: 500;
+	font-family: 'Raleway', sans-serif;
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
@@ -26,12 +30,6 @@ h4.bigger-line {
 	line-height: 32px;
 }
 
-.h4-logo {
-	display: inline-text;
-	vertical-align: bottom;
-	height: 32px;
-}
-
 h3.under-logo {
 	font-weight: 500;
 }
@@ -44,8 +42,13 @@ div.form-group {
 	display: inline-block;
 }
 
-.navbar-default {
-	background-color: #00BCD4;
+.navbar {
+	padding: 20px 0;
+}
+
+.navbar a {
+	font-weight: 900;
+	cursor: pointer;
 }
 
 #top-left-logo {
@@ -62,12 +65,23 @@ div.form-group {
 	vertical-align: top;
 }
 
+.h3-logo {
+	display: inline-block;
+	height: 32px;
+	vertical-align: bottom;
+}
+
+.h4-logo {
+	display: inline-text;
+	vertical-align: bottom;
+	height: 32px;
+}
+
 #headerwrap {
 	background-image: url('../img/background-top.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: bottom;
-	background-color: #00BCD4;
 	padding-top: 140px;
 }
 
@@ -92,14 +106,12 @@ div.form-group {
 	width: 340px;
 }
 
-.blue {
-	background-color: #536DFE;
-	border-color: #536DFE;
+.flat-button {
+	border: none;
 }
 
-.blue:hover {
-	background-color: #3D5AFE;	
-	border-color: #3D5AFE;
+.flat-button:hover {
+	border: none;
 }
 
 .logo-h1 {
@@ -151,16 +163,33 @@ div.form-group {
 	width: 240px;
 }
 
+/* colors */
 .cyan {
 	background-color: #00BCD4;
 }
 
-.cyan-row {
+.deep-purple {
+	background-color: #673AB7;
+}
+
+.teal {
+	background-color: #009688;	
+}
+
+.coloured-row {
+	background-color: #673AB7;
+}
+
+.coloured-row, .coloured-row h3, .coloured-row h1, .coloured-row h2, .coloured-row h4 {
 	color: white;
 }
 
-.cyan-row h3, .cyan-row h1, .cyan-row h2, .cyan-row h4 {
-	color: white;
+.light-text, .light-text h3, .light-text h1, .light-text h2, .light-text h4 {
+	color: white !important;
+}
+
+.dark-text, .dark-text h3, .dark-text h1, .dark-text h2, .dark-text h4 {
+	color: black !important;
 }
 
 @media (max-width: 768px) {
@@ -194,4 +223,70 @@ div.form-group {
 
 .no-top {
 	margin-top: 0;
+}
+
+.full-img {
+	max-width: 100%;
+}
+
+.color-icon {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.icon-red {
+	background-color: #F44336;
+}
+.icon-pink {
+	background-color: #E91E63
+}
+.icon-purple {
+	background-color: #9C27B0;
+}
+.icon-deeppurple {
+	background-color: #673AB7;
+}
+.icon-indigo {
+	background-color: #3F51B5
+}
+.icon-blue {
+	background-color: #2196F3;
+}
+.icon-lightblue {
+	background-color: #03A9F4;
+}
+.icon-cyan {
+	background-color: #00BCD4;
+}
+.icon-teal {
+	background-color: #009688;
+}
+.icon-green {
+	background-color: #4CAF50;
+}
+.icon-lightgreen {
+	background-color: #8BC34A;
+}
+.icon-lime {
+	background-color: #CDDC39;
+}
+.icon-yellow {
+	background-color: #FFEB3B;
+}
+.icon-amber {
+	background-color: #FFC107;
+}
+.icon-orange {
+	background-color: #FF9800;
+}
+.icon-deeporange {
+	background-color: #FF5722;
+}
+.icon-bluegray {
+	background-color: #607D8B;
 }

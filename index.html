@@ -19,8 +19,8 @@
     <!-- Custom LinkU stylesheet -->
     <link href="assets/css/linku.css" rel="stylesheet">
 
-    <!-- Fonts from Google Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+    <!--Fonts from Google Fonts-->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'> -->
 	<link href='http://fonts.googleapis.com/css?family=Raleway:500,300,700' rel='stylesheet' type='text/css'>
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -33,36 +33,69 @@
   <body>
 
     <!-- Fixed navbar -->
-    <!--<div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top coloured-row">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"><img id="top-left-logo" src="assets/img/linku-logo-white" /></a>
+			Primary: 
+			<i class="color-icon icon-red" onClick="changePrimary(0)"></i>
+			<i class="color-icon icon-pink" onClick="changePrimary(1)"></i>
+			<i class="color-icon icon-purple" onClick="changePrimary(2)"></i>
+			<i class="color-icon icon-deeppurple" onClick="changePrimary(3)"></i>
+			<i class="color-icon icon-indigo" onClick="changePrimary(4)"></i>
+			<i class="color-icon icon-blue" onClick="changePrimary(5)"></i>
+			<i class="color-icon icon-lightblue" onClick="changePrimary(6)"></i>
+			<i class="color-icon icon-cyan" onClick="changePrimary(7)"></i>
+			<i class="color-icon icon-teal" onClick="changePrimary(8)"></i>
+			<i class="color-icon icon-green" onClick="changePrimary(9)"></i>
+			<i class="color-icon icon-lightgreen" onClick="changePrimary(10)"></i>
+			<i class="color-icon icon-lime" onClick="changePrimary(11)"></i>
+			<i class="color-icon icon-yellow" onClick="changePrimary(12)"></i>
+			<i class="color-icon icon-amber" onClick="changePrimary(13)"></i>
+			<i class="color-icon icon-orange" onClick="changePrimary(14)"></i>
+			<i class="color-icon icon-deeporange" onClick="changePrimary(15)"></i>
+			<i class="color-icon icon-bluegrey" onClick="changePrimary(16)"></i>
+			<a onClick="setDarkPrimary(true)" style="color:black;">Dark</a> or <a onClick="setDarkPrimary(false)" style="color:white;">Light</a>
+			<br />
+			Secondary: 
+			<i class="color-icon icon-red" onClick="changeSecondary(0)"></i>
+			<i class="color-icon icon-pink" onClick="changeSecondary(1)"></i>
+			<i class="color-icon icon-purple" onClick="changeSecondary(2)"></i>
+			<i class="color-icon icon-deeppurple" onClick="changeSecondary(3)"></i>
+			<i class="color-icon icon-indigo" onClick="changeSecondary(4)"></i>
+			<i class="color-icon icon-blue" onClick="changeSecondary(5)"></i>
+			<i class="color-icon icon-lightblue" onClick="changeSecondary(6)"></i>
+			<i class="color-icon icon-cyan" onClick="changeSecondary(7)"></i>
+			<i class="color-icon icon-teal" onClick="changeSecondary(8)"></i>
+			<i class="color-icon icon-green" onClick="changeSecondary(9)"></i>
+			<i class="color-icon icon-lightgreen" onClick="changeSecondary(10)"></i>
+			<i class="color-icon icon-lime" onClick="changeSecondary(11)"></i>
+			<i class="color-icon icon-yellow" onClick="changeSecondary(12)"></i>
+			<i class="color-icon icon-amber" onClick="changeSecondary(13)"></i>
+			<i class="color-icon icon-orange" onClick="changeSecondary(14)"></i>
+			<i class="color-icon icon-deeporange" onClick="changeSecondary(15)"></i>
+			<i class="color-icon icon-bluegrey" onClick="changeSecondary(16)"></i>
+			<a onClick="setDarkSecondary(true)" style="color:black;">Dark</a> or <a onClick="setDarkSecondary(false)" style="color:white;">Light</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Already a member?</a></li>
+            <!-- s -->
           </ul>
         </div>
       </div>
-    </div>-->
+    </div>
 
-	<div id="headerwrap">
+	<div id="headerwrap" class="coloured-row ">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
-					<img id="logo-big-header" src="assets/img/svg/linku-logo-white.svg" />
+					<img id="logo-big-header" class="logo-color-change" src="assets/img/svg/linku-logo-white.svg" />
 					<h1>Because moments<br/>
 					are around you.</h1>
 					<form class="form-inline" role="form">
 					  <div class="form-group">
 					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
 					  </div>
-					  <button type="submit" class="btn btn-warning btn-lg blue">Get notified!</button>
+					  <button type="submit" class="secondary-color flat-button icon-blue btn btn-warning btn-lg">Get notified!</button>
 					</form>					
 				</div><!-- /col-lg-6 -->
 				<div class="col-lg-6 hidden-xs hidden-sm hidden-md">
@@ -115,7 +148,7 @@
 
 			</div><!--/col-lg-4 -->
 		</div><!-- /row -->
-		<!-- video holder -->
+		<!-- video placeholder
 		<div class="row mt centered padding-bottom">
 			<hr />
 			<iframe class="video-centered centered" width="640" height="360" src="https://www.youtube.com/embed/0aFgMX6bz4Y" frameborder="0" allowfullscreen></iframe>			
@@ -123,13 +156,24 @@
 	</div><!-- /container -->
 
 	<!-- third row -->
-	<div class="cyan-row cyan background-categories big-row">
-		<div class="container padding-bottom-more padding-top">
+	<div class="coloured-row big-row">
+		<div class="container padding-top">
 			<div class="row mt no-bottom">
-				<div class="col-lg-6">
-					<h1>Do you run<br/>a local business (?)</h1>
-					<h3 class="under-logo">Advertise your activity on LinkU and promote <br/> your business to all our users. (?)
+				<div class="col-sm-6">
+					<h1 class="no-top">Do you run<br/>a local business?</h1>
+					<h3 class="under-logo">Advertise and promote your business on <img class="h3-logo logo-color-change" src="assets/img/svg/linku-logo-white.svg" />, you will be surprised to see how easily can you reach new clients!
 					</h3>
+				</div>
+				<div class="col-sm-6">
+					<div class="row centered">
+						<img class="full-img" src="assets/img/business.png" />
+						<!-- <div class="col-xs-6 centered">
+							<img class="business-image" src="assets/img/ser01.png" alt="business-1" />
+						</div>
+						<div class="col-xs-6 centered">
+							<img class="business-image" src="assets/img/ser02.png" alt="business-2" />
+						</div> -->
+					</div>
 				</div>
 			</div>
 			<div class="row mt no-top">
@@ -154,7 +198,7 @@
 				  <div class="form-group">
 				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
 				  </div>
-				  <button type="submit" class="btn btn-warning btn-lg blue">Get notified!</button>
+				  <button type="submit" class="btn btn-warning btn-lg secondary-color flat-button icon-blue">Get notified!</button>
 				</form>					
 			</div>
 			<div class="col-lg-3"></div>
@@ -169,5 +213,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
   </body>
 </html>

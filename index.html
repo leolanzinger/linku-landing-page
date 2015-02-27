@@ -33,7 +33,7 @@
   <body>
 
     <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top coloured-row">
+    <div id="color-picker" class="navbar navbar-default navbar-fixed-top coloured-row">
       <div class="container">
         <div class="navbar-header">
 			Primary: 
@@ -84,7 +84,7 @@
       </div>
     </div>
 
-	<div id="headerwrap" class="coloured-row ">
+	<div id="headerwrap" class="coloured-row">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
@@ -116,18 +116,16 @@
 		</div><!-- /container -->
 	</div><!-- /headerwrap -->
 	
-	
 	<div class="container">
-		<div class="row mt centered">
+		<div class="row mt centered padding-top">
 			<div class="col-lg-6 col-lg-offset-3">
-				<img class="logo-h1" src="assets/img/svg/linku-logo-black.svg" />
-				<!--<h1>Your Landing Page<br/>Looks Wonderful Now.</h1>-->
+				<img class="logo-h1" src="assets/img/logo-long-black.png" />
 				<h3 class="under-logo">Easily connect with new people through social events close to you. 
 				</h3>
 			</div>
 		</div><!-- /row -->
 		
-		<div class="row mt centered">
+		<div class="row mt centered padding-bottom">
 			<div class="col-lg-4">
 				<img src="assets/img/icons.png" height="200" alt="look for events">
 				<h3>Look for events</h3>
@@ -156,15 +154,16 @@
 	</div><!-- /container -->
 
 	<!-- third row -->
-	<div class="coloured-row big-row">
-		<div class="container padding-top">
-			<div class="row mt no-bottom">
+	<!-- PUT PHOTO BACKGROUND HERE -->
+	<div id="business-row" class="coloured-row big-row">
+		<div class="container">
+			<div id="business-tag" class="row mt no-bottom">
 				<div class="col-sm-6">
-					<h1 class="no-top">Do you run<br/>a local business?</h1>
+					<h1 class="no-top">Do you run a local business?</h1>
 					<h3 class="under-logo">Advertise and promote your business on <img class="h3-logo logo-color-change" src="assets/img/svg/linku-logo-white.svg" />, you will be surprised to see how easily can you reach new clients!
 					</h3>
 				</div>
-				<div class="col-sm-6">
+				<!--<div class="col-sm-6">
 					<div class="row centered">
 						<img class="full-img business-color-change" src="assets/img/business-white.png" />
 						<!-- <div class="col-xs-6 centered">
@@ -172,18 +171,19 @@
 						</div>
 						<div class="col-xs-6 centered">
 							<img class="business-image" src="assets/img/ser02.png" alt="business-2" />
-						</div> -->
+						</div> 
 					</div>
-				</div>
+				</div>-->
 			</div>
-			<div class="row mt no-top">
+			
+			<div class="row mt no-top padding-bottom">
 				<div class="col-lg-6">
-					<!--<form class="form-inline" role="form">
+					<form class="form-inline" role="form">
 					  <div class="form-group">
 					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
 					  </div>
-					  <button type="submit" class="btn btn-warning btn-lg blue">Get notified!</button>
-					</form>-->
+					  <button type="submit" class="btn btn-warning btn-lg secondary-color flat-button icon-blue">Get notified!</button>
+					</form>
 				</div>
 			</div>
 		</div>

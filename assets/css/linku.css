@@ -31,7 +31,7 @@ h4.bigger-line {
 }
 
 h3.under-logo {
-	font-weight: 500;
+	font-weight: 200;
 }
 
 hr {
@@ -115,7 +115,8 @@ div.form-group {
 }
 
 .logo-h1 {
-	width: 160px;
+	max-width: 350px;
+	width: 100%;
 	margin-top: 20px;
 }
 
@@ -199,6 +200,21 @@ div.form-group {
 	}
 }
 
+#business-row {
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('../img/business-background.jpg');
+ 	background-size: cover;
+ 	height: 100vh;
+}
+
+#business-tag {
+	margin-top: 20%;
+}
+
 /*
 .big-row {
 	background-attachment: relative;
@@ -217,6 +233,11 @@ div.form-group {
     background-size: cover;
 }
 */
+
+#color-picker {
+	/*display: none;*/
+}
+
 .no-bottom {
 	margin-bottom: 15px;
 }

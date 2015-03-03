@@ -31,7 +31,11 @@ h4.bigger-line {
 }
 
 h3.under-logo {
-	font-weight: 200;
+	font-weight: 300;
+}
+
+h3.under-business {
+	font-weight: 400;
 }
 
 hr {
@@ -215,6 +219,11 @@ div.form-group {
 	margin-top: 20%;
 }
 
+#g-play-logo {
+	max-width: 200px;
+	width: 100%;
+}
+
 /*
 .big-row {
 	background-attachment: relative;
@@ -310,4 +319,12 @@ div.form-group {
 }
 .icon-bluegray {
 	background-color: #607D8B;
+}
+
+.flat-button.icon-cyan:hover {
+	background-color: #00ACC1;
+}
+
+.flat-button.icon-indigo:hover {
+	background-color: #283593;
 }

@@ -22,6 +22,8 @@
     <!--Fonts from Google Fonts-->
 	<!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'> -->
 	<link href='http://fonts.googleapis.com/css?family=Raleway:500,300,700' rel='stylesheet' type='text/css'>
+
+	<style> [data-sr] { visibility: hidden; } </style>
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -32,8 +34,8 @@
 
   <body>
 
-    <!-- Fixed navbar -->
-    <div id="color-picker" class="navbar navbar-default navbar-fixed-top coloured-row">
+    <!-- Fixed navbar 
+    <div id="color-picker" class="navbar navbar-default navbar-fixed-top icon-cyan coloured-row">
       <div class="container">
         <div class="navbar-header">
 			Primary: 
@@ -78,13 +80,12 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <!-- s -->
           </ul>
         </div>
       </div>
-    </div>
+    </div>-->
 
-	<div id="headerwrap" class="coloured-row">
+	<div id="headerwrap" class="icon-indigo coloured-row">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
@@ -95,20 +96,20 @@
 					  <div class="form-group">
 					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
 					  </div>
-					  <button type="submit" class="secondary-color flat-button icon-blue btn btn-warning btn-lg">Get notified!</button>
+					  <button type="submit" class="secondary-color flat-button icon-cyan btn btn-warning btn-lg">Get notified!</button>
 					</form>					
 				</div><!-- /col-lg-6 -->
-				<div class="col-lg-6 hidden-xs hidden-sm hidden-md">
+				<div class="col-lg-6 hidden-xs hidden-sm hidden-md" data-sr="enter bottom please, and hustle 50px">
 					<img id="event-screen-top" class="img-responsive" src="assets/img/screen-events-cropped.png" alt="linku" />
 				</div><!-- /col-lg-6 -->
 
 				<!-- md screens header app screenshot -->
-				<div class="header-background-md visible-md">
+				<div class="header-background-md visible-md" data-sr="enter bottom please, and hustle 20px">
 					<img src="assets/img/screen-events.png" alt="linku" />
 				</div>
 
 				<!-- sm screens header app screenshot -->
-				<div class="header-background-sm visible-sm">
+				<div class="header-background-sm visible-sm" data-sr="enter bottom please, and hustle 20px">
 					<img src="assets/img/screen-events.png" alt="linku" />
 				</div>
 				
@@ -116,7 +117,7 @@
 		</div><!-- /container -->
 	</div><!-- /headerwrap -->
 	
-	<div class="container">
+	<div class="container" data-sr="enter left please, and hustle 20px">
 		<div class="row mt centered padding-top">
 			<div class="col-lg-6 col-lg-offset-3">
 				<img class="logo-h1" src="assets/img/logo-long-black.png" />
@@ -155,12 +156,12 @@
 
 	<!-- third row -->
 	<!-- PUT PHOTO BACKGROUND HERE -->
-	<div id="business-row" class="coloured-row big-row">
-		<div class="container">
+	<div id="business-row" class="icon-cyan coloured-row big-row">
+		<div class="container"  data-sr="enter right please, and hustle 20px">
 			<div id="business-tag" class="row mt no-bottom">
 				<div class="col-sm-6">
 					<h1 class="no-top">Do you run a local business?</h1>
-					<h3 class="under-logo">Advertise and promote your business on <img class="h3-logo logo-color-change" src="assets/img/svg/linku-logo-white.svg" />, you will be surprised to see how easily can you reach new clients!
+					<h3 class="under-business">Advertise and promote your business on <img class="h3-logo logo-color-change" src="assets/img/svg/linku-logo-white.svg" />, you will be surprised to see how easily can you reach new clients!
 					</h3>
 				</div>
 				<!--<div class="col-sm-6">
@@ -176,20 +177,20 @@
 				</div>-->
 			</div>
 			
-			<div class="row mt no-top padding-bottom">
+			<div class="row mt no-top padded">
 				<div class="col-lg-6">
 					<form class="form-inline" role="form">
 					  <div class="form-group">
 					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
 					  </div>
-					  <button type="submit" class="btn btn-warning btn-lg secondary-color flat-button icon-blue">Get notified!</button>
+					  <button type="submit" class="btn btn-warning btn-lg secondary-color flat-button icon-indigo">Get notified!</button>
 					</form>
 				</div>
 			</div>
 		</div>
 	</div>
 	
-	<div class="container">
+	<div class="container" data-sr="enter bottom please, and hustle 20px">
 		<!-- <hr> -->
 		<div class="row centered padded">
 			<div class="col-lg-6 col-lg-offset-3">
@@ -198,14 +199,19 @@
 				  <div class="form-group">
 				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
 				  </div>
-				  <button type="submit" class="btn btn-warning btn-lg secondary-color flat-button icon-blue">Get notified!</button>
+				  <button type="submit" class="btn btn-warning btn-lg secondary-color flat-button icon-indigo">Get notified!</button>
 				</form>					
 			</div>
 			<div class="col-lg-3"></div>
 		</div><!-- /row -->
-		<hr>
+		<div class="row padding-bottom">
+			<center>
+				<img id="g-play-logo" src="assets/img/gplay_logo.png" />
+			</center>
+		</div>
 	</div><!-- /container -->
 	
+	<hr>
 	<p class="centered">Created by <img class="p-logo" src="assets/img/svg/linku-logo-black.svg" /> - Attribution License 3.0 - 2015</p>
 
     <!-- Bootstrap core JavaScript
@@ -213,6 +219,10 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
+    <!--<script src="assets/js/scripts.js"></script>-->
+    <script src='assets/js/scrollReveal.js'></script>
+    <script>
+    	window.sr = new scrollReveal();
+    </script>
   </body>
 </html>

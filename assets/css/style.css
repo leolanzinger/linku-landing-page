@@ -1,0 +1,277 @@
+/*
+*	LinkU css theme file:
+*	overrides some styles from assets/css/main.css
+*	Author: Leonardo Lanzinger
+*	Colors:
+*	primary red: #F44336;
+*	secondary red: #D32F2F;
+*	accent red: #D50000;
+*  	accent amber: #FFC107;
+*  	black: #212121;
+*/
+
+/********************************************************
+ text 
+ ********************************************************/
+
+body {
+	margin: 0;
+	background-color: #fff;
+	color: #212121;
+	font-weight: 500;
+	font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	color: #212121;
+}
+
+p {
+	font-weight: 500;
+	font-family: 'Raleway', sans-serif;
+}
+
+.dark-row, .dark-row h1, .dark-row h2, .dark-row h3, .dark-row h4, .dark-row h5, .dark-row h6{
+	color: #ffffff;
+}
+
+h1.tagline {
+	font-weight: 300;
+	letter-spacing: 1px;
+	font-size: 45px;
+	margin-top: 10px;
+}
+
+h3.tagline {
+	font-weight: 300;
+	margin-top: 10px;
+}
+
+.centered-text {
+	text-align: center;
+}
+
+#third-row p, #fourth-row p, #fifth-row p {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+@media (max-width: 768px) {
+	#third-row h1.tagline, #fourth-row h1.tagline, #fifth-row h1.tagline {
+		font-size: 34px;
+	}	
+}
+
+#sixth-row h3 {
+	font-weight: 300;
+}
+
+#seventh-row h4 {
+	font-size: 24px;
+	font-weight: 300;
+}
+
+/********************************************************
+ metrics 
+ ********************************************************/
+
+#header-row {
+	background-image: url('../img/background-top.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	padding-top: 140px;
+}
+
+@media (max-width: 1200px) {
+	#header-row {
+		background-image: url('../img/background-top.png');
+		min-height: 650px;
+	}
+}
+
+@media (max-width: 768px) {
+	#header-row {
+		min-height: 650px;
+		background-image: url('../img/background-top-small.png');
+	}
+}
+
+#header-row h1.padded-bottom {
+	padding-bottom: 10px;
+}
+
+#second-row.container .padded-top-bottom {
+	padding: 80px 0 40px 0;
+}
+
+#second-row.container .padded-bottom {
+	padding: 0 0 120px 0;
+}
+
+#third-row .container .padded-top-bottom, #fourth-row .container .padded-top-bottom, #fifth-row .container .padded-top-bottom {
+	padding: 120px 0;
+}
+
+#third-row h1.tagline, #fourth-row h1.tagline, #fifth-row h1.tagline {
+	padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+	#third-row h1.tagline, #fourth-row h1.tagline, #fifth-row h1.tagline {
+		padding-top: 80px;
+	}	
+}
+
+#sixth-row .container .padded-top {
+	padding: 180px 0 0 0;
+}
+
+#seventh-row.container .padded-top {
+	padding: 80px 0 0 0;
+}
+
+#seventh-row.container .padded-top-bottom {
+	padding: 80px 0 80px 0;
+}
+
+.no-overflow {
+	overflow: hidden;
+}
+
+.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/********************************************************
+ images 
+ ********************************************************/
+
+#header-row .logo-hedge {
+	width: 400px;
+}
+
+#header-row .screenshot-big {
+	width: 340px;
+}
+
+#header-row .screenshot-md {
+	width: 240px;
+}
+
+#header-row .screenshot-sm {
+	width: 240px;
+}
+
+#second-row .logo-hedge {
+	max-width: 340px;
+	width: 100%;
+	margin-top: 20px;
+}
+
+#third-row .screenshot, #fourth-row .screenshot, #fifth-row .screenshot {
+	width: 300px;
+}
+.centered-img {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+
+.right-img {
+	margin-right: 0;
+	margin-left: auto;
+	display: block;
+}
+
+@media (min-width: 992px) {
+	#third-row .right-img, #fifth-row .right-img {
+		margin-right: 80px;
+	}
+}
+
+@media (min-width: 992px) {
+	#fourth-row .screenshot {
+		margin-left: 80px;
+	}
+}
+
+.p-logo {
+	display: inline-block;
+	height: 24px;
+	vertical-align: top;
+}
+
+@media (max-width: 768px) {
+	#fourth-row .screenshot {
+		margin-left: -180px;
+	}
+}
+
+#sixth-row.business-bg {
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('../img/business-background.jpg');
+ 	background-size: cover;
+ 	height: 100vh;
+}
+
+#sixth-row .h3-logo {
+	display: inline-block;
+	height: 32px;
+	vertical-align: bottom;
+}
+
+#seventh-row .h4-logo {
+	display: inline-text;
+	vertical-align: bottom;
+	height: 32px;
+}
+
+/******************************************************** 
+ header background: category icons 
+ ********************************************************/
+
+.header-background-md {
+	position: absolute;
+	z-index: 0;
+	top: 120px;
+	right: 25%;
+	width: 240px;
+}
+
+.header-background-sm {
+	position: absolute;
+	z-index: 0;
+	top: 120px;
+	right: 8%;
+	width: 240px;
+}
+
+/********************************************************
+ colors 
+ ********************************************************/
+
+.bg-primary-red {
+	background-color: #F44336;
+}
+
+.bg-secondary-red {
+	background-color: #D32F2F;
+}
+
+.bg-accent-red {
+	background-color: #D50000;
+}
+
+.bg-accent-amber {
+	background-color: #FFC107;	
+}

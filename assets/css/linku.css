@@ -1,12 +1,4 @@
-/*
- *	LinkU css theme file:
- *	overrides some styles from assets/css/main.css
- *	Author: Leonardo Lanzinger
- *	Colors:
- *	cyan: #00BCD4;
- *	deep purple: #673AB7;
- *	teal: #009688;
- */
+/* drafts */
 
 body {
 	background-color: #fff;
@@ -60,7 +52,7 @@ div.form-group {
 }
 
 #logo-big-header {
-	width: 200px;
+	width: 400px;
 }
 
 .p-logo {
@@ -102,6 +94,12 @@ div.form-group {
 	}
 }
 
+@media (max-width: 500px) {
+	.email {
+		width: 130px !important;
+	}
+}
+
 #headerwrap h1 {
 	margin-top: 20px;
 }
@@ -112,6 +110,10 @@ div.form-group {
 
 .flat-button {
 	border: none;
+}
+
+.flat-button a {
+	color: white;
 }
 
 .flat-button:hover {
@@ -181,10 +183,6 @@ div.form-group {
 	background-color: #009688;	
 }
 
-.coloured-row {
-	background-color: #673AB7;
-}
-
 .coloured-row, .coloured-row h3, .coloured-row h1, .coloured-row h2, .coloured-row h4 {
 	color: white;
 }
@@ -203,6 +201,11 @@ div.form-group {
 		height: 280px;
 	}
 }
+
+.form-control {
+	display: inline-block !important;
+}
+
 
 #business-row {
 	background: 
@@ -268,6 +271,22 @@ div.form-group {
 	vertical-align: middle;
 	cursor: pointer;
 }
+
+.accent-red {
+	background-color: #D50000;
+}
+
+.accent-amber {
+	background-color: #FFC107;
+}
+
+.primary-red {
+	background-color: #F44336;
+}
+
+/*
+	old colors	
+*/
 
 .icon-red {
 	background-color: #F44336;

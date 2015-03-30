@@ -19,18 +19,31 @@ body {
 	background-color: #fff;
 	color: #212121;
 	font-weight: 500;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
 	font-family: 'Raleway', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Raleway', sans-serif;
+h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	color: #212121;
 }
 
+a {
+	color: #D50000;
+}
+
+a:hover {
+	color: #D32F2F;
+}
+
 p {
-	font-weight: 500;
-	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
 }
 
 .dark-row, .dark-row h1, .dark-row h2, .dark-row h3, .dark-row h4, .dark-row h5, .dark-row h6{
@@ -40,7 +53,7 @@ p {
 h1.tagline {
 	font-weight: 300;
 	letter-spacing: 1px;
-	font-size: 45px;
+	font-size: 35px;
 	margin-top: 10px;
 }
 
@@ -58,14 +71,40 @@ h3.tagline {
 	font-weight: 300;
 }
 
+#third-row h1.tagline, #fourth-row h1.tagline, #fifth-row h1.tagline {
+	font-size: 50px;
+}
+
 @media (max-width: 768px) {
 	#third-row h1.tagline, #fourth-row h1.tagline, #fifth-row h1.tagline {
 		font-size: 34px;
 	}	
 }
 
+#sixth-row h1 {
+	font-weight: 300;
+	font-size: 50px;
+}
+
 #sixth-row h3 {
 	font-weight: 300;
+	font-size: 25px;
+	color: rgba(255,255,255,0.8);
+}
+
+#sixth-row h4 {
+	font-weight: 300;
+	font-size: 16px;
+	color: rgba(255,255,255,0.8);
+	line-height: 24px;
+}
+
+#sixth-row h4 a {
+	color: #FFC107;
+}
+
+#sixth-row hr {
+	opacity: 0.1;
 }
 
 #seventh-row h4 {
@@ -135,6 +174,10 @@ h3.tagline {
 
 #seventh-row.container .padded-top-bottom {
 	padding: 80px 0 80px 0;
+}
+
+#seventh-row h4.padded-bottom {
+	padding-bottom: 20px;
 }
 
 .no-overflow {
@@ -274,4 +317,30 @@ h3.tagline {
 
 .bg-accent-amber {
 	background-color: #FFC107;	
+}
+
+.dark-row {
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+}
+
+/********************************************************
+ buttons
+ ********************************************************/
+
+.material-button {
+	border-radius: 2px;
+	text-transform: uppercase;
+	font-size: 15px;
+	line-height: 26px;
+	font-family: 'Roboto', sans-serif;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+	border: none;
+}
+
+.material-button:hover {
+	background-color: #FFB300;
+}
+
+.material-button:active {
+	background-color: #FFA000;
 }

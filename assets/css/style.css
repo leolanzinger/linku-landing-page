@@ -250,6 +250,12 @@ nav ul li a {
 	background-color: inherit;
 }
 
+@media (max-width: 768px) {
+	.navbar-header, .nav > li {
+		float: left;
+	}
+}
+
 /********************************************************
  images 
  ********************************************************/

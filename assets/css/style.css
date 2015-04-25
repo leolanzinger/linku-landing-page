@@ -251,8 +251,12 @@ nav ul li a {
 }
 
 @media (max-width: 768px) {
-	.navbar-header, .nav > li {
+	.nav > li {
 		float: left;
+	}
+
+	nav {
+		padding-left: inherit;
 	}
 }
 
